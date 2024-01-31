@@ -13,16 +13,13 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
-.gridTwo-first-column {
+.gridTwo .gridTwo-first-column {
   background-color: red;
 }
-
-.gridTwo-second-column {
+.gridTwo .gridTwo-second-column {
   background-color: blue;
 }
-
-.gridTwo-three-column {
+.gridTwo .gridTwo-three-column {
   background-color: yellow;
 }
 
@@ -60,8 +57,7 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
-#grid4-second-row {
+.gridFour #grid4-second-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -75,13 +71,11 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
-.grid5-second-row {
+.gridFive .grid5-second-row {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
-
-.grid5-second-row img {
+.gridFive .grid5-second-row img {
   width: 200px;
   height: 200px;
   -o-object-fit: cover;
@@ -97,7 +91,6 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
-.gridSix > p {
-  font-family: "Caveat", cursive;
+.gridSix p {
+  font-family: "Lato", sans-serif;
 }/*# sourceMappingURL=styles.css.map */

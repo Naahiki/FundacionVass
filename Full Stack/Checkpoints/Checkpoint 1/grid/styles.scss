@@ -21,19 +21,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     @include margin();
+    .gridTwo-first-column{
+        @include background-color(red);
+    }
+    
+    .gridTwo-second-column{
+        @include background-color(blue);
+    }
+    
+    .gridTwo-three-column{
+        @include background-color(yellow);
+    }
 }
 
-.gridTwo-first-column{
-    @include background-color(red);
-}
 
-.gridTwo-second-column{
-    @include background-color(blue);
-}
-
-.gridTwo-three-column{
-    @include background-color(yellow);
-}
 
 
 /* GRID 3 STYLES */
@@ -67,12 +68,15 @@
     width: 500px;
     background-color: green;
     @include margin();
+
+    #grid4-second-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
-#grid4-second-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
 
 /* GRID 5 STYLES */
 .gridFive {
@@ -81,18 +85,20 @@
     width: 500px;
     background-color: gray;
     @include margin();
+
+    .grid5-second-row {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
 }
 
-.grid5-second-row {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
 
-.grid5-second-row img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
 
 /* GRID 6 STYLES */
 .gridSix {
@@ -101,9 +107,9 @@
     width: 500px;
     background-color: gray;
     @include margin();
-    font-family: "Font Awesome\ 5 Free", Arial, Helvetica, sans-serif;
+        p {
+        font-family: 'Lato', sans-serif;
+        }
+    
 }
 
-.gridSix > p {
-    font-family: 'Lato', sans-serif;
-}
