@@ -22,7 +22,8 @@ print(my_list[0])
 
 # EXERCISE 4: Create a new number variable that adds 10 to your original number
 
-add_ten = my_number + 10
+new_num_var= 16
+add_ten = new_num_var + 10
 print(add_ten)
 
 
