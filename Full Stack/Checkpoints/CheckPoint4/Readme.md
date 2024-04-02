@@ -2,7 +2,7 @@
 
 ## ¿Cuál es la diferencia entre una lista y una tupla en Python?
 
-En Python, tanto las listas como las tuplas son estructuras de datos que pueden almacenar una colección de elementos. Sin embargo, tienen características y usos distintos que son importantes para un desarrollador entender.
+En Python, tanto las listas como las tuplas son estructuras de datos que pueden almacenar una colección de elementos. Sin embargo, tienen características y usos distintos.
 
 #### Listas:
 
