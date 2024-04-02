@@ -49,7 +49,7 @@ Python sigue la regla PEMDAS, que es un acrónimo para:
 
     En la expresión 3 + 4 * 2, primero se realiza la multiplicación (4 * 2 = 8) y luego la suma (3 + 8 = 11), dando como resultado 11.
     Para modificar el orden natural, puedes usar paréntesis: (3 + 4) * 2 primero calcula la suma dentro del paréntesis (3 + 4 = 7) y luego realiza la multiplicación (7 * 2 = 14), resultando en 14.
-    Funciona como en las matematicas de toda la vida.
+Funciona como en las matematicas de toda la vida.
 
 ## ¿Qué es un diccionario Python?
 Un diccionario en Python es una colección desordenada de elementos, organizada en pares clave-valor. Es una de las estructuras de datos más versátiles y utilizadas en Python, permitiendo un rápido acceso, modificación y eliminación de datos mediante claves únicas.
