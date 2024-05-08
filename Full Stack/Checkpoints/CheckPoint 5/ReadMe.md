@@ -68,7 +68,7 @@ Bucles son fundamentales en la programación porque permiten realizar tareas rep
 - Implementación de algoritmos que requieren repetición, como búsqueda y ordenamiento.
 
 #### Ejemplos de uso:
-Bucle `for` para imprimir cada letra de una palabra:
+Bucle `for`:
 
 ```python
 numeros = [1, 2, 3, 4, 5]
@@ -90,9 +90,9 @@ while respuesta != 'salir':
 Este ejemplo muestra cómo un bucle `while` puede manejar interacciones de usuario repetidas hasta que se cumpla una condición de salida.
 
 #### Aspectos Técnicos y Buenas Prácticas:
-- Control de Bucles: Python proporciona varias formas de controlar la ejecución dentro de los bucles, incluyendo las declaraciones break y continue. break termina el bucle inmediatamente, mientras que continue omite el resto del código en el bucle y vuelve al principio (para la siguiente iteración).
+- Control de Bucles: Python proporciona varias formas de controlar la ejecución dentro de los bucles, incluyendo las declaraciones `break y continue`. `break` termina el bucle inmediatamente, mientras que `continue` omite el resto del código en el bucle y vuelve al principio (para la siguiente iteración).
 
-- Uso de else con bucles: En Python, else también puede ser utilizado con bucles. Un bloque else después de un bucle for o while se ejecuta solo si el bucle no terminó con un break.
+- Uso de `else` con bucles: En Python, `else` también puede ser utilizado con bucles. Un bloque `else` después de un bucle `for` o `while` se ejecuta solo si el bucle no terminó con un `break`.
 
 #### Ejemplo de break y else en un bucle:
 
@@ -112,11 +112,11 @@ Este ejemplo ilustra cómo utilizar `break` para salir de un bucle una vez que s
 ## ¿Qué es una lista por comprensión en Python?
 
 #### Definición:
-Las listas por comprensión son una característica de Python que permite crear listas de manera concisa. Una sola línea de código en una lista por comprensión puede reemplazar múltiples líneas de código de un bucle for convencional, haciendo el código más compacto y legible. Basadas en notaciones matemáticas de conjuntos, estas estructuras permiten generar listas dinámicas directamente desde una línea de código, aplicando una expresión a cada elemento de una secuencia o iterable.
+Las listas por comprensión son una característica de Python que permite crear listas de manera concisa. Una sola línea de código en una lista por comprensión puede reemplazar múltiples líneas de código de un bucle `for` convencional, haciendo el código más compacto y legible. Basadas en notaciones matemáticas de conjuntos, estas estructuras permiten generar listas dinámicas directamente desde una línea de código, aplicando una expresión a cada elemento de una secuencia o iterable.
     
 #### Utilidad:
 Son extremadamente útiles para transformar un iterable (como una lista, tupla o rango) en una nueva lista aplicando una expresión a cada elemento del iterable, opcionalmente filtrando elementos bajo ciertas condiciones. 
-La sintaxis de las listas por comprensión incluye brackets que encierran una expresión seguida de uno o más bucles `for` y opcionalmente filtros `if`. La forma general es:
+La sintaxis de las listas por comprensión incluye `brackets` que encierran una expresión seguida de uno o más bucles `for` y opcionalmente filtros `if`. La forma general es:
 
 ```python
 [nueva_expresion for item in iterable if condicion]
@@ -176,7 +176,7 @@ area = calcular_area_rectangulo(5, 10)
 print("El área del rectángulo es:", area)
 
 ```
-Este ejemplo muestra cómo se puede usar el condicional `if` para realizar diferentes impresiones basadas en la edad del usuario.
+
 
 Uso de argumentos de palabras clave:
 ```python
@@ -204,7 +204,7 @@ configuracion(color='rojo', tamaño='mediano', estilo='negrita')
 ## ¿Qué es una función Lambda en Python?
 
 #### Definición:
-Una función lambda en Python, también conocida como función anónima, es una forma de crear pequeñas funciones de una sola línea sin utilizar la declaración `def` tradicional. Estas funciones son llamadas "anónimas" porque no necesitan ser nombradas. Se definen utilizando la palabra clave `lambda`, seguida de uno o más argumentos, un dos puntos y una expresión que se evalúa y devuelve un valor.
+Una función `lambda` en Python, también conocida como función anónima, es una forma de crear pequeñas funciones de una sola línea sin utilizar la declaración `def` tradicional. Estas funciones son llamadas "anónimas" porque no necesitan ser nombradas. Se definen utilizando la palabra clave `lambda`, seguida de uno o más argumentos, un dos puntos y una expresión que se evalúa y devuelve un valor.
 
 #### Sintaxis:
 La sintaxis de una función `lambda` es:
