@@ -79,7 +79,7 @@ print(f"La suma de los números es: {suma}")
 
 ```
 
-Este ejemplo ilustra cómo un bucle for puede ser utilizado para sumar todos los elementos de una lista, una operación común en el procesamiento de datos.
+Este ejemplo ilustra cómo un bucle `for` puede ser utilizado para sumar todos los elementos de una lista, una operación común en el procesamiento de datos.
 
 ```python
 respuesta = ''
@@ -87,7 +87,7 @@ while respuesta != 'salir':
     respuesta = input("Escribe 'salir' para terminar el programa: ")
     print("Gracias por tu respuesta. Escribe 'salir' para terminar o cualquier otra cosa para continuar.")
 ```
-Este ejemplo muestra cómo un bucle while puede manejar interacciones de usuario repetidas hasta que se cumpla una condición de salida.
+Este ejemplo muestra cómo un bucle `while` puede manejar interacciones de usuario repetidas hasta que se cumpla una condición de salida.
 
 #### Aspectos Técnicos y Buenas Prácticas:
 - Control de Bucles: Python proporciona varias formas de controlar la ejecución dentro de los bucles, incluyendo las declaraciones break y continue. break termina el bucle inmediatamente, mientras que continue omite el resto del código en el bucle y vuelve al principio (para la siguiente iteración).
@@ -107,7 +107,7 @@ else:
     print("Número no encontrado en la lista.")
 
 ```
-Este ejemplo ilustra cómo utilizar break para salir de un bucle una vez que se cumple una condición y cómo el bloque else se utiliza para manejar el caso cuando el break no se ejecuta.
+Este ejemplo ilustra cómo utilizar `break` para salir de un bucle una vez que se cumple una condición y cómo el bloque else se utiliza para manejar el caso cuando el `break` no se ejecuta.
 
 ## ¿Qué es una lista por comprensión en Python?
 
@@ -123,8 +123,8 @@ La sintaxis de las listas por comprensión incluye brackets que encierran una ex
 
 ```
 - nueva_expresion: Define cómo cada elemento del iterable será transformado antes de ser añadido a la lista resultante.
-- for item in iterable: Un bucle que itera sobre cada elemento del iterable.
-- if condicion: Un filtro opcional que incluye solo aquellos elementos que cumplen con la condición.
+- `for` item `in` iterable: Un bucle que itera sobre cada elemento del iterable.
+- `if` condicion: Un filtro opcional que incluye solo aquellos elementos que cumplen con la condición.
 
 #### Ejemplos de uso:
 Crear una lista de los cuadrados de los primeros 10 números enteros:
@@ -207,17 +207,17 @@ configuracion(color='rojo', tamaño='mediano', estilo='negrita')
 Una función lambda en Python, también conocida como función anónima, es una forma de crear pequeñas funciones de una sola línea sin utilizar la declaración `def` tradicional. Estas funciones son llamadas "anónimas" porque no necesitan ser nombradas. Se definen utilizando la palabra clave `lambda`, seguida de uno o más argumentos, un dos puntos y una expresión que se evalúa y devuelve un valor.
 
 #### Sintaxis:
-La sintaxis de una función lambda es:
+La sintaxis de una función `lambda` es:
 ```python
 lambda argumentos: expresion
 ```
     
 #### Utilidad:
-Las funciones lambda son útiles para realizar pequeñas operaciones sin necesidad de definir formalmente una función usando `def`. Son especialmente útiles cuando se requieren funciones por un corto período de tiempo o dentro de otras funciones, como en las funciones de orden superior que toman funciones como argumentos.Las funciones lambda son especialmente útiles en situaciones que requieren una función simple por un breve período de uso, y donde definir una función completa podría ser excesivamente verboso o innecesariamente complejo. Algunos de los usos más comunes de las funciones lambda incluyen:
+Las funciones `lambda` son útiles para realizar pequeñas operaciones sin necesidad de definir formalmente una función usando `def`. Son especialmente útiles cuando se requieren funciones por un corto período de tiempo o dentro de otras funciones, como en las funciones de orden superior que toman funciones como argumentos.Las funciones `lambda` son especialmente útiles en situaciones que requieren una función simple por un breve período de uso, y donde definir una función completa podría ser innecesario. Algunos de los usos más comunes de las funciones `lambda` incluyen:
 
-- Funciones de orden superior: Son aquellas que toman una función como argumento o devuelven una función como resultado. Las funciones lambda son útiles aquí porque pueden ser creadas en línea y pasadas como argumentos.
-- Operaciones breves y específicas: Tales como transformaciones simples sobre colecciones, como map, filter, y reduce.
-- Personalización de comportamiento: Como en métodos que aceptan funciones como parámetros para personalizar su operación, por ejemplo, los métodos sort o sorted.
+- Funciones de orden superior: Son aquellas que toman una función como argumento o devuelven una función como resultado. Las funciones `lambda` son útiles aquí porque pueden ser creadas en línea y pasadas como argumentos.
+- Operaciones breves y específicas: Tales como transformaciones simples sobre colecciones, como `map`, `filter`, y `reduce`.
+- Personalización de comportamiento: Como en métodos que aceptan funciones como parámetros para personalizar su operación, por ejemplo, los métodos `sort o sorted`.
 
 #### Ejemplos de uso:
 Ordenar una lista de tuplas basada en el segundo elemento de cada tupla:
@@ -228,7 +228,6 @@ lista.sort(key=lambda x: x[1])
 print(lista)
 
 ```
-Este ejemplo muestra cómo se puede usar el condicional `if` para realizar diferentes impresiones basadas en la edad del usuario.
 
 Uso con `filter`:
 ```python
@@ -253,13 +252,13 @@ print(empleados_ordenados)
 #### Definición:
 `pip` es el acrónimo de "Pip Installs Packages" y es el sistema de gestión de paquetes usado por Python. Facilita la instalación, actualización y desinstalación de paquetes de software en Python, los cuales están disponibles en el Python Package Index (PyPI), el repositorio oficial de terceros para software Python.
 
-#### Funcionamiento de pip:
+#### Funcionamiento de `pip`:
 
-- Instalación de paquetes: pip descarga paquetes de PyPI y los instala en el sistema Python del usuario, gestionando todas las dependencias necesarias que el paquete pueda tener.
+- Instalación de paquetes: `pip` descarga paquetes de PyPI y los instala en el sistema Python del usuario, gestionando todas las dependencias necesarias que el paquete pueda tener.
 
-- Actualización de paquetes: pip puede actualizar un paquete instalado previamente a su última versión sin necesidad de una reinstalación completa.
+- Actualización de paquetes: `pip` puede actualizar un paquete instalado previamente a su última versión sin necesidad de una reinstalación completa.
 
-- Desinstalación de paquetes: pip también proporciona una manera fácil de eliminar un paquete instalado, lo que ayuda a mantener un entorno de desarrollo limpio.
+- Desinstalación de paquetes: `pip` también proporciona una manera fácil de eliminar un paquete instalado, lo que ayuda a mantener un entorno de desarrollo limpio.
     
 #### Utilidad:
 `pip` facilita la instalación de paquetes desarrollados por terceros, lo que permite a los programadores utilizar código que otros han escrito, evitando la necesidad de reinventar la rueda. Es esencial para la gestión eficiente de proyectos de software, ya que permite una fácil instalación, actualización y eliminación de paquetes.
