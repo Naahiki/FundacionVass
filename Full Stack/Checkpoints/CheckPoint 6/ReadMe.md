@@ -1,7 +1,7 @@
 
 ---
 
-# Documentación para Principiantes en Desarrollo Python
+# Checkpoint 6
 
 ## ¿Para qué usamos Clases en Python?
 
