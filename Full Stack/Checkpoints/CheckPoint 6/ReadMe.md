@@ -362,77 +362,106 @@ Estos verbos son esenciales para interactuar con una API y realizar diferentes o
 
 ###  Ejemplos :
 
-###  GET :
 
 ```python
-import requests
+from flask import Flask, request, jsonify
 
-# URL de la API de clima
-url = 'https://api.openweathermap.org/data/2.5/weather?q=London&appid=your_api_key'
+app = Flask(__name__)
 
-# Realizar solicitud GET
-response = requests.get(url)
 
-# Imprimir la respuesta
-print(response.json())
-```
-
-###  POST:
-
-```python
-import requests
-
-# URL del recurso para crear una nueva cuenta de usuario
-url = 'https://api.example.com/register'
-
-# Datos del formulario
-data = {
-    'username': 'nuevo_usuario',
-    'password': 'contraseña_segura'
+users = {
+    1: {"name": "Alice", "email": "alice@example.com"},
+    2: {"name": "Bob", "email": "bob@example.com"}
+}
+tasks = {
+    123: {"task": "Complete assignment", "status": "Pending"}
 }
 
-# Realizar solicitud POST
-response = requests.post(url, data=data)
+@app.route('/weather', methods=['GET'])
+def get_weather():
+   
+    url = 'url de una API waether'
+    response = requests.get(url)
+    return jsonify(response.json())
 
-# Imprimir la respuesta
-print(response.json())
+@app.route('/register', methods=['POST'])
+def register_user():
+    data = request.json
+    new_id = len(users) + 1
+    users[new_id] = data
+    return jsonify(users[new_id]), 201
+
+@app.route('/tasks/<int:task_id>', methods=['DELETE'])
+def delete_task(task_id):
+    if task_id in tasks:
+        del tasks[task_id]
+        return '', 204
+    else:
+        return jsonify({"error": "Task not found"}), 404
+
+@app.route('/users/<int:user_id>', methods=['PUT'])
+def update_user(user_id):
+    if user_id in users:
+        data = request.json
+        users[user_id].update(data)
+        return jsonify(users[user_id])
+    else:
+        return jsonify({"error": "User not found"}), 404
+
+if __name__ == '__main__':
+    app.run(debug=True)
 ```
 
-###  DELETE:
+### Explicación de cada ruta:
 
-```python
-import requests
+1. **GET `/weather`**: Realiza una solicitud GET a la API de OpenWeatherMap para obtener información del clima de Londres.
+    ```python
+    @app.route('/weather', methods=['GET'])
+    def get_weather():
+        url = 'https://api.openweathermap.org/data/2.5/weather?q=London&appid=your_api_key'
+        response = requests.get(url)
+        return jsonify(response.json())
+    ```
 
-# URL del recurso a eliminar (por ejemplo, tarea con ID 123)
-url = 'https://api.example.com/tasks/123'
+2. **POST `/register`**: Crea un nuevo usuario y lo agrega a la lista de usuarios simulados.
+    ```python
+    @app.route('/register', methods=['POST'])
+    def register_user():
+        data = request.json
+        new_id = len(users) + 1
+        users[new_id] = data
+        return jsonify(users[new_id]), 201
+    ```
 
-# Realizar solicitud DELETE
-response = requests.delete(url)
+3. **DELETE `/tasks/<int:task_id>`**: Elimina una tarea específica de la lista de tareas simuladas.
+    ```python
+    @app.route('/tasks/<int:task_id>', methods=['DELETE'])
+    def delete_task(task_id):
+        if task_id in tasks:
+            del tasks[task_id]
+            return '', 204
+        else:
+            return jsonify({"error": "Task not found"}), 404
+    ```
 
-# Imprimir la respuesta
-print(response.status_code)  # Debería imprimir 204 si la eliminación fue exitosa
-```
+4. **PUT `/users/<int:user_id>`**: Actualiza la información del perfil de un usuario específico.
+    ```python
+    @app.route('/users/<int:user_id>', methods=['PUT'])
+    def update_user(user_id):
+        if user_id in users:
+            data = request.json
+            users[user_id].update(data)
+            return jsonify(users[user_id])
+        else:
+            return jsonify({"error": "User not found"}), 404
+    ```
 
-###  PUT:
+### Cómo probar:
 
-```python
-import requests
-
-# URL del recurso para actualizar la información de perfil de usuario (por ejemplo, ID de usuario 456)
-url = 'https://api.example.com/users/456'
-
-# Nuevos datos del perfil de usuario
-new_data = {
-    'name': 'Nuevo Nombre',
-    'email': 'nuevo_email@example.com'
-}
-
-# Realizar solicitud PUT
-response = requests.put(url, data=new_data)
-
-# Imprimir la respuesta
-print(response.json())
-```
+- **GET**: Accede a `http://127.0.0.1:5000/weather` en tu navegador o utiliza una herramienta como Postman para enviar una solicitud GET.
+- **POST**: Envía una solicitud POST a `http://127.0.0.1:5000/register` con un cuerpo JSON en Postman.
+- **DELETE**: Envía una solicitud DELETE a `http://127.0.0.1:5000/tasks/123` en Postman.
+- **PUT**: Envía una solicitud PUT a `http://127.0.0.1:5000/users/1` con un cuerpo JSON en Postman.
 
 
 ### Qué es Postman
