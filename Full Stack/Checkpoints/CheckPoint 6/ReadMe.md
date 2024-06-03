@@ -414,7 +414,7 @@ if __name__ == '__main__':
 
 ### Explicación de cada ruta:
 
-1. **GET `/weather`**: Realiza una solicitud GET a una API de clima para obtener información del clima de Londres.
+1. **GET `/weather`**: Realiza una solicitud GET a una API de clima para obtener información del clima.
     ```python
     @app.route('/weather', methods=['GET'])
     def get_weather():
