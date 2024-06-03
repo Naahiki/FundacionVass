@@ -654,6 +654,7 @@ print(suma(10, 20))
 # Name: CodigoFacilito
 # 30
 ```
+
 ## Bibliografía Recomendada
 
 Para completar esta documentación, me he basado en las siguientes fuentes, las cuales también recomiendo leer para profundizar más en los temas tratados:
@@ -664,4 +665,8 @@ Para completar esta documentación, me he basado en las siguientes fuentes, las 
 4. [¿Qué es Postman?](https://openwebinars.net/blog/que-es-postman/)
 5. [Polimorfismo y sobrecarga de métodos en Python](https://pythones.net/polimorfismo-sobrecarga-metodos/)
 6. [Decoradores en Python](https://codigofacilito.com/articulos/decoradores-python)
+7. [Tutorial de Clases en Python (Documentación Oficial)](https://docs.python.org/es/3/tutorial/classes.html)
+8. [Clases en Python (HubSpot Blog)](https://blog.hubspot.es/website/clases-python)
+
+
 
