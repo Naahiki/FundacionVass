@@ -1,4 +1,3 @@
-¡Claro! Aquí tienes la documentación en lenguaje Markdown:
 
 ---
 
