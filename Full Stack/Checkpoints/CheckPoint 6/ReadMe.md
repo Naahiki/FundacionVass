@@ -17,9 +17,6 @@ Un objeto es una instancia de una clase, lo que significa que es una "cosa" conc
 
 Por ejemplo, si tienes una clase `Coche` que describe las características y comportamientos de un coche, cada coche específico que creas usando esa clase es un objeto. Cada coche tendrá sus propios atributos como `marca` y `modelo`, y podrá realizar acciones como `acelerar` y `frenar`.
 
-### Ejemplo:
-
-Claro, aquí tienes un ejemplo diferente, utilizando una clase `Libro` para modelar libros en una biblioteca:
 
 ### Ejemplo de Clase y Objeto: Biblioteca
 
@@ -95,7 +92,6 @@ class Libro:
 mi_libro = Libro("Cien Años de Soledad", "Gabriel García Márquez")
 
 ```
-
 
 2. **Abstracción:**
    - **Definición:** Simplifica la interacción con el objeto ocultando detalles complejos y mostrando solo lo esencial.
@@ -318,6 +314,7 @@ En este ejemplo, el polimorfismo se demuestra de la siguiente manera:
 - La capacidad de los objetos de `Pulpo` y `Foca` de responder al método `hablar` de manera específica muestra el concepto de polimorfismo, donde una misma interfaz (método `hablar`) puede ser utilizada para diferentes tipos de objetos, cada uno con su propia implementación.
 
 Por lo tanto, el código ilustra claramente cómo funciona el polimorfismo en Python, permitiendo que objetos de diferentes clases respondan de manera específica al mismo mensaje o llamada de método.
+
 ## ¿Qué es una API?
 
 Una API es esencialmente un conjunto de reglas y herramientas que define cómo se pueden comunicar diferentes componentes de software entre sí. Imagina que estás en un restaurante y quieres hacer un pedido al chef. Tú no necesitas saber cómo preparar la comida, solo necesitas comunicarle qué quieres. Aquí, el menú actúa como una API: proporciona una lista de opciones que puedes pedir y define cómo se deben solicitar esas opciones. De manera similar, una API en el mundo de la programación proporciona una forma estandarizada para que las aplicaciones se comuniquen entre sí.
@@ -512,8 +509,6 @@ En resumen, MongoDB es una base de datos NoSQL que ofrece flexibilidad y escalab
 
 ![Ejemplo de imagen](./images/bbdd.png)
 
-
-Por supuesto, aquí tienes una explicación más detallada sobre los métodos dunder y los decoradores en Python:
 
 ### Métodos Dunder (Métodos Especiales)
 
