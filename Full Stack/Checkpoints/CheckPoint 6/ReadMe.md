@@ -414,11 +414,11 @@ if __name__ == '__main__':
 
 ### Explicación de cada ruta:
 
-1. **GET `/weather`**: Realiza una solicitud GET a la API de OpenWeatherMap para obtener información del clima de Londres.
+1. **GET `/weather`**: Realiza una solicitud GET a una API de clima para obtener información del clima de Londres.
     ```python
     @app.route('/weather', methods=['GET'])
     def get_weather():
-        url = 'https://api.openweathermap.org/data/2.5/weather?q=London&appid=your_api_key'
+        url = 'url api'
         response = requests.get(url)
         return jsonify(response.json())
     ```
