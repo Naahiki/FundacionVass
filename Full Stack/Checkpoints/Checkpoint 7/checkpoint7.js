@@ -14,7 +14,7 @@ const checkpoint7 = (a, b, c, d) => {
     }
 }
 
-checkpoint7(10, 20, 5, 6); // output: ¡El número es mayor que 50!
+checkpoint7(6, 18, 15, 9); // output: ¡El número es mayor que 50!
 
 checkpoint7(1, 2, 3, 1); // output: ¡El número es menor que 50!
 
