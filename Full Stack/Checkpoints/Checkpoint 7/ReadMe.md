@@ -1,5 +1,5 @@
-# CHECKPOINT 7 
+# CHECKPOINT 7
  
-### Las preguntas teoricas están respondidas aqui:
+### Las preguntas teoricas están respondidas aqui, usando Gitbook:
 
 https://naahiki.gitbook.io/checkpoint-7
