@@ -4,7 +4,7 @@ Este programa en JavaScript permite a los usuarios seleccionar elementos del men
 
 ## Características
 
-- **Menús Dinámicos**: Menús para desayuno, almuerzo y cena con una variedad de platos.
+- **Menús Dinámicos**: Menús para desayuno, almuerzo y cena con una variedad de platos (3 platos por cada primero, segundo y postre).
 - **Comentarios Aleatorios**: Comentarios de la camarera para mejorar la experiencia del usuario.
 - **Selección Basada en la Hora**: Selección de menú basada en la hora para asegurar opciones de comida adecuadas.
 - **Validación de Entradas**: Validación de la entrada de la hora y la selección de elementos del menú.
