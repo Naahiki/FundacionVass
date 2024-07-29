@@ -1,6 +1,6 @@
 # Programa de Selección de Menú
 
-Este programa en JavaScript permite a los usuarios seleccionar elementos del menú para el desayuno, almuerzo o cena, basado en la hora que ingresen. El usuario es guiado a través de una serie de `prompts` para seleccionar un plato principal y dos guarniciones del menú correspondiente, y luego recibe un recibo con el costo total.
+Este programa en JavaScript permite a los usuarios seleccionar elementos del menú para el desayuno, almuerzo o cena, basado en la hora que ingresen. El usuario es guiado a través de una serie de `prompts` para seleccionar un plato principal y el segundo y el postre del menú correspondiente, y luego recibe un recibo con el costo total.
 
 ## Características
 
