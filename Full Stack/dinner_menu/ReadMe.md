@@ -192,7 +192,7 @@ const menus = {
 function runMenu() {
         let mealTime = null;
         while (!mealTime) {
-            const selectedTime = prompt("Welcome\nOur service hours are from 08:00 AM to 11:00 PM.\nPlease enter the time (HH:MM) to select your meal:");
+            const selectedTime = prompt("Welcome\nOur service hours are from 08:00 to 23:00. \nPlease enter the time (HH:MM) to select your meal:");
             if (selectedTime === null) {
                 alert("Process canceled.");
                 return;
