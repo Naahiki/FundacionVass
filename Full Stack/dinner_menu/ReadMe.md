@@ -119,7 +119,7 @@ const menus = {
 ### Selección Aleatoria
 
 - **Comentarios Aleatorios**:
-    - Se utiliza la función `Math.random()` para seleccionar un comentario aleatorio de la camarera.
+    - Se utiliza la función `Math.random()` para seleccionar un comentario aleatorio.
     - Ejemplo de código:
     ```javascript
     function getRandomComment(comments) {
