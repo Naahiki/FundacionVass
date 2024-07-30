@@ -1,10 +1,10 @@
-# Programa de Selección de Menú
+# Dinner-menu
 
-Este programa en JavaScript permite a los usuarios seleccionar elementos del menú para el desayuno, almuerzo o cena, basado en la hora que ingresen. El usuario es guiado a través de una serie de `prompts` para seleccionar un plato principal y el segundo y el postre del menú correspondiente, y luego recibe un recibo con el costo total.
+Este programa en JavaScript permite a los usuarios seleccionar elementos del menú para el desayuno, almuerzo o cena, basado en la hora que ingresen. El usuario es guiado a través de una serie de `prompts` para seleccionar un plato principal, segundo y postres del menú correspondiente, y luego recibe un recibo con el costo total.
 
 ## Características
 
-- **Menús Dinámicos**: Menús para desayuno, almuerzo y cena con una variedad de platos (3 platos por cada primero, segundo y postre).
+- **Menús Dinámicos**: Menús para desayuno, almuerzo y cena con una variedad de platos.
 - **Comentarios Aleatorios**: Comentarios de la camarera para mejorar la experiencia del usuario.
 - **Selección Basada en la Hora**: Selección de menú basada en la hora para asegurar opciones de comida adecuadas.
 - **Validación de Entradas**: Validación de la entrada de la hora y la selección de elementos del menú.
@@ -18,7 +18,7 @@ No se requiere instalación.
 
 1. Ejecuta el programa en CODEPEN.
 2. Ingresa la hora actual en formato `HH:MM` cuando se te pida.
-3. Sigue las indicaciones para seleccionar un plato principal y dos guarniciones del menú.
+3. Sigue las indicaciones para seleccionar un plato principal, segundo y postre del menú.
 4. Recibe un recibo con el costo total de los elementos seleccionados.
 
 ## Ventanas del Navegador: `alert` y `prompt`
@@ -187,6 +187,10 @@ function runMenu() {
 
     runMenu();    
 ```
+
+
+           
+
 
 
            
