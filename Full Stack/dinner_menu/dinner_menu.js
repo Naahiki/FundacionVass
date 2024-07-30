@@ -53,7 +53,7 @@ const menus = {
 };
 
 
-// Comentarios de la camarera con iconos
+// Comentarios
 const comments = [
     "Good choice! 😊",
     "That sounds delicious. 🍽️",
@@ -62,7 +62,7 @@ const comments = [
     "You have great taste! 👌"
 ];
 
-// Comentarios de la hora de comida con iconos
+// Comentarios de la hora de comida 
 const mealTimeComments = {
     breakfast: [
         "Good morning! It's time for breakfast to start your day with energy. 🌞",
