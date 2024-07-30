@@ -1,59 +1,59 @@
-// Menús
 const menus = {
     breakfast: {
         dishes: [
-            { name: 'Croissant 🥐', nameWithoutIcon: 'Croissant', price: 3.99 },
-            { name: 'Avocado Toast 🥑', nameWithoutIcon: 'Avocado Toast', price: 4.99 },
-            { name: 'Smoothie Bowl 🥤', nameWithoutIcon: 'Smoothie Bowl', price: 5.99 }
+            { name: 'Tostada con Mantequilla 🍞', nameWithoutIcon: 'Tostada con Mantequilla', price: 2.50 },
+            { name: 'Tortilla de Patatas 🍳', nameWithoutIcon: 'Tortilla de Patatas', price: 3.50 },
+            { name: 'Pan con Tomate 🍅', nameWithoutIcon: 'Pan con Tomate', price: 2.99 }
         ],
         dishes_2: [
-            { name: 'Orange Juice 🍊', nameWithoutIcon: 'Orange Juice', price: 2.99 },
-            { name: 'Coffee ☕', nameWithoutIcon: 'Coffee', price: 1.99 },
-            { name: 'Green Tea 🍵', nameWithoutIcon: 'Green Tea', price: 1.99 }
+            { name: 'Zumo de Naranja 🍊', nameWithoutIcon: 'Zumo de Naranja', price: 2.50 },
+            { name: 'Café ☕', nameWithoutIcon: 'Café', price: 1.50 },
+            { name: 'Té 🍵', nameWithoutIcon: 'Té', price: 1.50 }
         ],
         dishes_3: [
-            { name: 'Fresh Fruit 🍓', nameWithoutIcon: 'Fresh Fruit', price: 3.50 },
-            { name: 'Yogurt with Honey 🍯', nameWithoutIcon: 'Yogurt with Honey', price: 2.50 },
-            { name: 'Granola 🥣', nameWithoutIcon: 'Granola', price: 1.99 }
+            { name: 'Fruta Fresca 🍓', nameWithoutIcon: 'Fruta Fresca', price: 3.00 },
+            { name: 'Yogur con Miel 🍯', nameWithoutIcon: 'Yogur con Miel', price: 2.00 },
+            { name: 'Granola 🥣', nameWithoutIcon: 'Granola', price: 1.50 }
         ]
     },
     lunch: {
         dishes: [
-            { name: 'Caesar Salad 🥗', nameWithoutIcon: 'Caesar Salad', price: 6.99 },
-            { name: 'Chicken Sandwich 🥪', nameWithoutIcon: 'Chicken Sandwich', price: 7.99 },
-            { name: 'Lentil Soup 🍲', nameWithoutIcon: 'Lentil Soup', price: 5.99 }
+            { name: 'Ensalada Mixta 🥗', nameWithoutIcon: 'Ensalada Mixta', price: 5.99 },
+            { name: 'Bocadillo de Jamón 🥪', nameWithoutIcon: 'Bocadillo de Jamón', price: 6.99 },
+            { name: 'Sopa de Pollo 🍲', nameWithoutIcon: 'Sopa de Pollo', price: 4.99 }
         ],
         dishes_2: [
-            { name: 'French Fries 🍟', nameWithoutIcon: 'French Fries', price: 2.99 },
-            { name: 'Mixed Salad 🥗', nameWithoutIcon: 'Mixed Salad', price: 3.99 },
-            { name: 'Cookies 🍪', nameWithoutIcon: 'Cookies', price: 1.99 }
+            { name: 'Patatas Fritas 🍟', nameWithoutIcon: 'Patatas Fritas', price: 2.50 },
+            { name: 'Ensalada Verde 🥗', nameWithoutIcon: 'Ensalada Verde', price: 3.50 },
+            { name: 'Galletas 🍪', nameWithoutIcon: 'Galletas', price: 1.50 }
         ],
         dishes_3: [
-            { name: 'Garlic Bread 🍞', nameWithoutIcon: 'Garlic Bread', price: 2.00 },
-            { name: 'Mashed Potatoes 🥔', nameWithoutIcon: 'Mashed Potatoes', price: 2.50 },
-            { name: 'Brown Rice 🍚', nameWithoutIcon: 'Brown Rice', price: 1.99 }
+            { name: 'Pan de Ajo 🍞', nameWithoutIcon: 'Pan de Ajo', price: 1.99 },
+            { name: 'Puré de Patatas 🥔', nameWithoutIcon: 'Puré de Patatas', price: 2.00 },
+            { name: 'Arroz Blanco 🍚', nameWithoutIcon: 'Arroz Blanco', price: 1.50 }
         ]
     },
     dinner: {
         dishes: [
-            { name: 'Pesto Pasta 🍝', nameWithoutIcon: 'Pesto Pasta', price: 9.99 },
-            { name: 'Margherita Pizza 🍕', nameWithoutIcon: 'Margherita Pizza', price: 8.99 },
-            { name: 'Fish Tacos 🌮', nameWithoutIcon: 'Fish Tacos', price: 10.99 }
+            { name: 'Espaguetis a la Boloñesa 🍝', nameWithoutIcon: 'Espaguetis a la Boloñesa', price: 8.99 },
+            { name: 'Pizza Margarita 🍕', nameWithoutIcon: 'Pizza Margarita', price: 7.99 },
+            { name: 'Tacos de Pollo 🌮', nameWithoutIcon: 'Tacos de Pollo', price: 9.99 }
         ],
         dishes_2: [
-            { name: 'Red Wine 🍷', nameWithoutIcon: 'Red Wine', price: 4.99 },
-            { name: 'Craft Beer 🍺', nameWithoutIcon: 'Craft Beer', price: 3.99 },
-            { name: 'Sparkling Water 🥤', nameWithoutIcon: 'Sparkling Water', price: 1.99 }
+            { name: 'Vino Tinto 🍷', nameWithoutIcon: 'Vino Tinto', price: 4.50 },
+            { name: 'Cerveza 🍺', nameWithoutIcon: 'Cerveza', price: 3.50 },
+            { name: 'Agua con Gas 🥤', nameWithoutIcon: 'Agua con Gas', price: 1.50 }
         ],
         dishes_3: [
-            { name: 'Steamed Broccoli 🥦', nameWithoutIcon: 'Steamed Broccoli', price: 2.50 },
-            { name: 'Roasted Potatoes 🥔', nameWithoutIcon: 'Roasted Potatoes', price: 3.00 },
-            { name: 'Spinach Salad 🥗', nameWithoutIcon: 'Spinach Salad', price: 2.99 }
+            { name: 'Puerros asados🥦', nameWithoutIcon: 'Puerros asados', price: 2.00 },
+            { name: 'Patatas Asadas 🥔', nameWithoutIcon: 'Patatas Asadas', price: 2.50 },
+            { name: 'Ensalada 🥗', nameWithoutIcon: 'Ensalada', price: 2.50 }
         ]
     }
 };
 
-// Comentarios de la camarera
+
+// Comentarios de la camarera con iconos
 const comments = [
     "Good choice! 😊",
     "That sounds delicious. 🍽️",
@@ -62,7 +62,7 @@ const comments = [
     "You have great taste! 👌"
 ];
 
-// Comentarios de la hora de comida 
+// Comentarios de la hora de comida con iconos
 const mealTimeComments = {
     breakfast: [
         "Good morning! It's time for breakfast to start your day with energy. 🌞",
@@ -144,7 +144,7 @@ function runMenu() {
     let mealTime = null;
     while (!mealTime) {
         // Solicitar al usuario que ingrese la hora
-        const selectedTime = prompt("👋 Welcome 👋\nOur service hours are from 08:00 AM to 11:00 PM.\nPlease enter the time (HH:MM) to select your meal:");
+        const selectedTime = prompt("👋 Welcome 👋\nOur service hours are from 08:00 to 23:00 .\nPlease enter the time (HH:MM) to select your meal:");
         if (selectedTime === null) {
             alert("Process canceled. ❌");
             return;
