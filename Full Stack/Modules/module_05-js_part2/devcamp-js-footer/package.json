@@ -1,0 +1,25 @@
+{
+  "name": "nahiki-js-footer",
+  "version": "0.1.0",
+  "description": "Este módulo permite generar un pie de página dinámico para aplicaciones JS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naahiki/devcamp-js-footer.git"
+  },
+  "keywords": [
+    "footer"
+  ],
+  "author": "Naahiki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Naahiki/devcamp-js-footer/issues"
+  },
+  "homepage": "https://github.com/Naahiki/devcamp-js-footer#readme",
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}

@@ -1,0 +1,109 @@
+@mixin background-color($color) {
+    background-color: $color;
+}
+
+@mixin margin {
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
+
+/* GRID 1 STYLES */
+.gridOne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include margin();
+}
+
+/* GRID 2 STYLES */
+
+
+.gridTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    @include margin();
+}
+
+.gridTwo-first-column{
+    @include background-color(red);
+}
+
+.gridTwo-second-column{
+    @include background-color(blue);
+}
+
+.gridTwo-three-column{
+    @include background-color(yellow);
+}
+
+
+/* GRID 3 STYLES */
+.gridThree {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    width: 500px;
+    height: 300px;
+    @include margin();
+}
+
+.gridThree div:first-child {
+    @include background-color(lightgrey);
+
+}
+
+.gridThree div:last-child {
+    @include background-color(aqua);
+}
+
+.gridThree-row img {
+    width: 500px;
+    height: 225px;
+    object-fit: cover;
+}
+
+/* GRID 4 STYLES */
+.gridFour {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 500px;
+    background-color: green;
+    @include margin();
+}
+
+#grid4-second-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* GRID 5 STYLES */
+.gridFive {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 500px;
+    background-color: gray;
+    @include margin();
+}
+
+.grid5-second-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.grid5-second-row img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* GRID 6 STYLES */
+.gridSix {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 500px;
+    background-color: gray;
+    @include margin();
+    font-family: "Font Awesome\ 5 Free", Arial, Helvetica, sans-serif;
+}
+
+.gridSix > p {
+    font-family: 'Lato', sans-serif;
+}

@@ -1,0 +1,169 @@
+<!-- 
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create and delete bullet points between lists</title>
+
+    <style>
+        .todoItem:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="todos">
+        <h2>Pending Todos</h2>
+        <ul>
+            <li class="todoItem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li class="todoItem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, sunt!</li>
+            <li class="todoItem">Lorem ipsum dolor sit amet.</li>
+            <li class="todoItem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore debitis dolorem!</li>
+            <li class="todoItem">Lorem ipsum dolor sit.</li>
+        </ul>
+    </div>
+
+    <h2>Completed Todos</h2>
+    <ul class="completedTodoWrapper">
+        <div class="completed-footer"></div>
+    </ul>
+</body>
+
+<script>
+    const todos = document.querySelectorAll('.todoItem');
+    const completedTodos = document.querySelector('.completed-footer');
+    const completedTodoWrapper = document.querySelector('.completedTodoWrapper');
+
+    todos.forEach(todo => {
+        todo.addEventListener('click', (event) => {
+            let completedTodo = document.createElement('li');
+            let todoContent = document.createTextNode(todo.textContent);
+            completedTodo.appendChild(todoContent);
+            completedTodoWrapper.insertBefore(completedTodo, completedTodos);
+            todo.remove();
+        })
+    });
+</script>
+</html> 
+ -->
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Todo List</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .day {
+            margin-bottom: 20px;
+        }
+        .day h3 {
+            margin-bottom: 10px;
+        }
+        .todoItem:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .completedTodoWrapper {
+            margin-top: 10px;
+            padding-left: 20px;
+            color: gray;
+        }
+        .todoInput {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Weekly Todo List</h1>
+    <div id="week">
+        <!-- Days will be inserted here dynamically -->
+    </div>
+
+    <script>
+        const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+        const weekDiv = document.getElementById('week');
+
+        // Function to create the day sections dynamically
+        daysOfWeek.forEach(day => {
+            // Create the day container
+            const dayDiv = document.createElement('div');
+            dayDiv.classList.add('day');
+
+            // Create the day title
+            const dayTitle = document.createElement('h3');
+            dayTitle.textContent = day;
+
+            // Create the input for adding new todos
+            const todoInput = document.createElement('input');
+            todoInput.classList.add('todoInput');
+            todoInput.setAttribute('placeholder', `Add a new todo for ${day}`);
+            todoInput.setAttribute('type', 'text');
+
+            // Create the button to add the todo
+            const addButton = document.createElement('button');
+            addButton.textContent = 'Add';
+
+            // Create the unordered list for pending todos
+            const todoList = document.createElement('ul');
+            todoList.classList.add('todoList');
+
+            // Create the unordered list for completed todos
+            const completedTodoWrapper = document.createElement('ul');
+            completedTodoWrapper.classList.add('completedTodoWrapper');
+            const completedTitle = document.createElement('h4');
+            completedTitle.textContent = 'Completed Todos';
+
+            // Append everything to the day div
+            dayDiv.appendChild(dayTitle);
+            dayDiv.appendChild(todoInput);
+            dayDiv.appendChild(addButton);
+            dayDiv.appendChild(todoList);
+            dayDiv.appendChild(completedTitle);
+            dayDiv.appendChild(completedTodoWrapper);
+
+            // Add the day div to the week container
+            weekDiv.appendChild(dayDiv);
+
+            // Add functionality to the add button
+            addButton.addEventListener('click', () => {
+                if (todoInput.value.trim() !== '') {
+                    const newTodo = document.createElement('li');
+                    newTodo.classList.add('todoItem');
+                    newTodo.textContent = todoInput.value;
+                    todoList.appendChild(newTodo);
+                    todoInput.value = '';
+
+                    // Add functionality to mark todo as completed
+                    newTodo.addEventListener('click', () => {
+                        const completedTodo = document.createElement('li');
+                        completedTodo.textContent = newTodo.textContent;
+                        completedTodoWrapper.appendChild(completedTodo);
+                        newTodo.remove();
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
